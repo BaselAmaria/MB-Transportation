@@ -1,0 +1,9 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    .pages {
+        min-height: 70vh;
+        padding-top: 89px;
+    }
+}

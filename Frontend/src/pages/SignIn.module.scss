@@ -1,0 +1,17 @@
+.signIn {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 600px;
+    width: 90%;
+    margin: 5rem auto;
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        button {
+            text-align: center;
+        }
+    }
+
+}

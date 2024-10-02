@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    .arrow {
+        font-size: 1.5rem;
+        transition: all 250ms ease-in-out;
+    }
+    .dropDownBody {
+        position: absolute;
+        background-color: var(--whiteColor);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        bottom: -170px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 200px;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 1rem;
+        .dropDownItem {
+            a {
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                border-radius: 5px;
+                color: var(--blackColor);
+                svg {
+                    font-size: 1.2rem;
+                }
+                &:hover {
+                    color: var(--blueColor);
+                }
+            }
+            
+        }
+       
+    }
+}

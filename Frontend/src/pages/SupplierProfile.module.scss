@@ -1,0 +1,157 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 90%;
+    margin: 3rem auto;
+    .profileHeader {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #cccccc67;
+        .button {
+            all: unset;
+            cursor: pointer;
+            padding: 1rem;
+            font-weight: bold;
+            border-bottom: 1px solid transparent;
+            display: flex;
+            gap: 0.5rem;
+            span {
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: var(--blueColor);
+            }
+        }
+    }
+    .profileContent {
+        padding: 3rem;
+        max-width: 600px;
+        width: 100%;
+        margin: 2rem auto;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: relative;
+        .btns {
+            display: flex;
+            gap: 1rem;
+            .btn, .btn2 {
+                all: unset;
+                cursor: pointer;
+                padding: 0.5rem 1rem;
+                font-weight: bold;
+                border-radius: 5px;
+                text-align: center;
+                background-color: #1134ea;
+                width: 100%;
+                color: #fff;
+                &:disabled {
+                    opacity: 0.5;
+                    cursor: not-allowed;
+                  }
+            }
+            .btn2 {
+                background-color: transparent;
+                color: #000;
+            }
+        }
+        .edit {
+            all: unset;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            font-weight: bold;
+        }
+        p {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            span {
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+    }
+    .prices {
+        width: 100%;
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: relative;
+        .pricesHeader {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            .editPrices {
+                all: unset;
+                cursor: pointer;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+        .pricesContent {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            justify-content: center;
+            .priceCard {
+                padding: 1rem;
+                border-radius: 5px;
+                background-color: var(--blueColor);
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                svg {
+                    font-size: 2rem;
+                }
+               
+            }
+        }
+        
+    }
+    .feedbacks {
+        width: 100%;
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: relative;
+        .feedbackContent {
+            display: flex;
+            flex-direction: column;
+            .feedback {
+                padding: 1rem;
+                border-radius: 5px;
+                border: 1px solid #cccccc67;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .feedDetails {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    .stars {
+                        display: flex;
+                        align-items: center;
+                        svg {
+                            color: var(--blueColor);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
